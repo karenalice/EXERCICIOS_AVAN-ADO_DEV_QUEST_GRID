@@ -1,0 +1,121 @@
+/* Fonte externa */
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap');
+
+/* Estilo geral */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Container centralizado */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 30px;
+}
+
+/* Cabeçalho */
+header h1 {
+  text-align: center;
+  color: #790f57;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+header h2 {
+  text-align: center;
+  color: #555;
+  font-size: 1.3rem;
+  margin-bottom: 50px;
+}
+
+/* Cartões de exercício */
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px 35px;
+  margin-bottom: 40px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+}
+
+/* Títulos dos cartões */
+.card h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #790f57;
+  font-size: 1.5rem;
+  margin-bottom: 18px;
+}
+
+/* Parágrafos */
+.card p {
+  line-height: 1.8;
+  font-size: 1.05rem;
+  margin-bottom: 18px;
+}
+
+/* Container dos links com separador */
+.botoes-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.botoes-links .separador {
+  font-size: 1.2rem;
+  color: #444;
+  transform: translateY(-1px);
+}
+
+/* Links */
+.card a {
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: #790f57;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.card a:hover {
+  background-color: #ff6600;
+  transform: scale(1.05);
+}
+
+/* Ícones opcionais */
+.card i {
+  color: #1f8837;
+  font-size: 1.2rem;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .container {
+    padding: 40px 20px;
+  }
+
+  .card {
+    padding: 25px 20px;
+  }
+
+  .card h2 {
+    font-size: 1.3rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+}
